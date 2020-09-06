@@ -25,6 +25,9 @@ export const Description = styled.div`
   display: flex;
   justify-content: flex-start;
   flex: 4;
+  @media (max-width: 555px) {
+    flex: 1;
+  }
 `;
 export const Decorator = styled.div`
   padding: 4px;

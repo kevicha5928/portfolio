@@ -7,10 +7,6 @@ import { TextItem, MainContainer } from './styles';
 export default function Experience() {
   return (
     <MainContainer>
-      <TextItem fontSize={3}>
-        Experience
-        <Divider />
-      </TextItem>
       {experience.map((item) => (
         <ExperienceEntry key={`${item.company}${item.jobtitle}`} experience={item} />
       ))}

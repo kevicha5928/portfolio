@@ -25,6 +25,10 @@ export default function Resume() {
         </GridRow>
       </Grid>
       <TextItem fontSize={1.5}>Other Software Skills</TextItem>
+      <TextItem fontSize={3}>
+        Experience
+        <Divider />
+      </TextItem>
       <Experience />
     </MainContainer>
   );
