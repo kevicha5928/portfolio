@@ -14,8 +14,10 @@ export const MainContainer = styled.div`
 `;
 
 export const TextItem = styled.div`
+  padding: 16px;
   color: ${color.textLight};
-  ${font.size(48)}
+  ${(props) => font.size(props.fontSize)}
+  ${font.regular}
 `;
 
 export const Image = styled.img`
@@ -39,9 +41,9 @@ export const GridRow = styled.div`
 `;
 
 export const GridItem = styled.div`
-  flex-basis: 20%;
+  flex-basis: 25%;
   -ms-flex: auto;
-  padding: 0px 8px 0px;
+  padding: 8px 8px 0px;
   position: relative;
   box-sizing: border-box;
   color: ${color.textLight};

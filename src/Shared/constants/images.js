@@ -32,8 +32,8 @@ import arduino from './assets/logos/arduino.png';
 import python from './assets/logos/python.png';
 
 import react from './assets/logos/react.png';
-import pandas from './assets/logos/pandas.png';
-import plotly from './assets/logos/plotly.png';
+import redux from './assets/logos/redux.png';
+import firebase from './assets/logos/firebase3.webp';
 import nodejs from './assets/logos/nodejs.png';
 
 export const images = {
@@ -49,4 +49,6 @@ export const Logos = [
   { img: javascript, desc: 'Javascript', width: 90 },
   { img: python, desc: 'Python', width: 90 },
   { img: nodejs, desc: 'Node Js', width: 90 },
+  { img: redux, desc: 'Redux', width: 100 },
+  { img: firebase, desc: 'Firebase', width: 100 },
 ];
