@@ -4,7 +4,6 @@ import { color, font, mixin } from 'Shared/utils/styles';
 export const Grid = styled.div`
   max-width: 1500px;
   margin: 0 auto;
-  ${mixin.scrollableY};
 `;
 export const GridRow = styled.div`
   display: flex;

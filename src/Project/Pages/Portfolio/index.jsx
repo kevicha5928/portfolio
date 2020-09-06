@@ -7,9 +7,6 @@ export default function Portfolio() {
   return (
     <Grid>
       <GridRow>
-        {/* <GridItem>
-          <TextItem>{window.innerWidth}</TextItem>
-        </GridItem> */}
         {images.foodie.map((item) => (
           <GridItem>
             <Image src={item} />

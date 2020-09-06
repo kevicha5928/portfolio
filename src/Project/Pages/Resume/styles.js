@@ -1,22 +1,24 @@
 import styled from 'styled-components';
-import { color, font, mixin } from 'Shared/utils/styles';
+import { color, font, mixin, sizes } from 'Shared/utils/styles';
 
 export const MainContainer = styled.div`
-  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content_ flex-start;
+  align-items: center;
+    width: 900px;
+  height: 100%;
   @media (max-width: 555px) {
     width: 90%;
   }
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 50px 0px 50px;
 
-  ${mixin.scrollableY};
 `;
 
 export const TextItem = styled.div`
   padding: 16px;
   color: ${color.textLight};
-  font-size: ${(props) => props.fontSize}rem;
+  ${(props) => font.sizeRem(props.fontSize)}
   ${font.regular}
 `;
 

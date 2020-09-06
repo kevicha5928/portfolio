@@ -12,9 +12,6 @@ export const NavBar = styled.div`
   width: 100%;
   height: ${sizes.navBarHeight}px;
   background: ${color.primary};
-  &:hover {
-    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.6);
-  }
   z-index: 100;
 `;
 
@@ -30,10 +27,6 @@ export const Item = styled.div`
     background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.6);
   }
-  /* i {
-    position: absolute;
-    left: 18px;
-  } */
 `;
 
 export const ItemText = styled.h1`

@@ -6,10 +6,10 @@ import { color, mixin } from 'Shared/utils/styles';
 
 export const AniContainer = styled.div`
   position: relative;
-  ${mixin.scrollableY};
   background: ${color.backgroundDarkPrimary};
   width: 100%;
   height: 100%;
+  ${mixin.scrollableY};
 `;
 
 export const Animated = styled(animated.div)`
