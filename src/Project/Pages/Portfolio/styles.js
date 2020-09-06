@@ -37,7 +37,7 @@ export const GridItem = styled.div`
 `;
 
 export const TextItem = styled.div`
-  ${font.size(48)}
+  ${font.sizeRem(1)}
 `;
 
 export const Image = styled.img`

@@ -39,5 +39,5 @@ export const Item = styled.div`
 export const ItemText = styled.h1`
   position: relative;
   ${font.regular}
-  ${font.size(24)}
+  ${font.sizeRem(1.25)}
 `;

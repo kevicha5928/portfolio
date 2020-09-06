@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTransition } from 'react-spring';
 import { images } from 'Shared/constants/images';
-import { SlideshowContainer, Image, AniImg, AniContainer } from './styles';
+import { Image, AniImg, AniContainer } from './styles';
 
 // import dumps from './assets/foodie/dumps.jpg';
 
@@ -46,17 +46,15 @@ function Slideshow({ desc }) {
   });
 
   return (
-    <SlideshowContainer>
-      <AniContainer>
-        {transitions.map(({ item, props, key }) => {
-          return (
-            <AniImg key={key} style={props}>
-              <Image src={item} />
-            </AniImg>
-          );
-        })}
-      </AniContainer>
-    </SlideshowContainer>
+    <AniContainer>
+      {transitions.map(({ item, props, key }) => {
+        return (
+          <AniImg key={key} style={props} src={item}>
+            <Image src={item} />
+          </AniImg>
+        );
+      })}
+    </AniContainer>
   );
 }
 

@@ -47,7 +47,7 @@ function Home() {
   });
 
   return (
-    <Grid>
+    <Grid id="grid">
       <GridRow>
         <GridItem>
           <TextRow>

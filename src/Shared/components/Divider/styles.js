@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, mixin } from 'Shared/utils/styles';
+import { color } from 'Shared/utils/styles';
 
 export const Line = styled.div`
   border-top: 1px solid ${color.backgroundLight};

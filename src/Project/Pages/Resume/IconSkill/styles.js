@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, mixin } from 'Shared/utils/styles';
+import { color, font } from 'Shared/utils/styles';
 
 export const Container = styled.div`
   display: flex;
@@ -7,7 +7,7 @@ export const Container = styled.div`
   justify-content: flex-end;
   align-items: center;
   color: ${color.textLight};
-  ${font.size(48)}
+  ${font.sizeRem(1)}
 `;
 
 export const Image = styled.img`
@@ -19,6 +19,5 @@ export const Image = styled.img`
 export const TextItem = styled.div`
   margin-top: 8px;
   color: ${color.textLight};
-  ${font.size(20)}
   ${font.regular}
 `;

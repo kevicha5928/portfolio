@@ -22,7 +22,7 @@ export const GridRow = styled.div`
   align-items: center;
   flex-flow: row wrap;
   width: 100%;
-  /* justify-content: flex-start; */
+  justify-content: center;
 `;
 
 export const GridItem = styled.div`
@@ -31,16 +31,15 @@ export const GridItem = styled.div`
   position: relative;
   color: ${color.textLight};
 
-  @media (min-width: 1333px) {
-    flex-basis: 50%;
-    width: 500px;
-    height: 50%;
-    justify-content: center;
-  }
+  flex-basis: 50%;
+  max-width: 500px;
+  height: 50%;
+  justify-content: center;
+
   @media (max-width: 555px) {
     flex-basis: 100%;
     padding: 24px 24px 48px;
-    width: 350;
+    width: 350px;
     /* height: 200px; */
     justify-content: flex-start;
   }
@@ -48,12 +47,7 @@ export const GridItem = styled.div`
 
 export const MainText = styled.div`
   ${(props) => (props.weight === 'bold' ? font.medium : font.regular)}
-  @media (min-width: 1333px) {
-    ${font.size(48)}
-  }
-  @media (max-width: 555px) {
-    ${font.size(36)}
-  }
+  ${font.sizeRem(3)}
   color: ${color.textLight};
 `;
 
@@ -65,12 +59,8 @@ export const TextRow = styled.div`
 export const AniText = styled(animated.div)`
   position: absolute;
   ${font.regular}
-  @media (min-width: 1333px) {
-    ${font.size(48)}
-  }
-  @media (max-width: 555px) {
-    ${font.size(36)}
-  }
+  ${font.sizeRem(3)}
+  
   color: ${(props) => props.color};
 `;
 

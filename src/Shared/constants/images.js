@@ -26,9 +26,7 @@ import code1 from './assets/software/code1.jpg';
 import sortApp from './assets/software/sortApp.jpg';
 
 // Logos
-import matlab from './assets/logos/matlab.png';
 import javascript from './assets/logos/javascript.png';
-import arduino from './assets/logos/arduino.png';
 import python from './assets/logos/python.png';
 
 import react from './assets/logos/react.png';

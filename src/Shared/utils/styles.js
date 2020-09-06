@@ -43,7 +43,9 @@ export const font = {
   medium: 'font-family: "RedHatDisplayMedium"; font-weight: normal;',
   bold: 'font-family: "RedHatDisplayBold"; font-weight: normal;',
   black: 'font-family: "RedHatDisplayBlack"; font-weight: normal;',
-  size: (size) => `font-size: ${size}px;`,
+  sizePx: (size) => `font-size: ${size}px;`,
+  sizeRem: (size) => `font-size: ${size}rem;`,
+  sizeEm: (size) => `font-size: ${size}em;`,
 };
 
 export const mixin = {

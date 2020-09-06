@@ -8,8 +8,8 @@ import { TextItem, MainContainer, GridRow, GridItem, Grid } from './styles';
 export default function Resume() {
   return (
     <MainContainer>
-      <TextItem fontSize={48}>Kevin Chang</TextItem>
-      <TextItem fontSize={32}>
+      <TextItem fontSize={3}>Kevin Chang</TextItem>
+      <TextItem fontSize={1.5}>
         Primary Software Skills
         <Divider />
       </TextItem>
@@ -22,7 +22,7 @@ export default function Resume() {
           ))}
         </GridRow>
       </Grid>
-      <TextItem fontSize={32}>
+      <TextItem fontSize={1.5}>
         Other Software Skills
         <Divider />
       </TextItem>

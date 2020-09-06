@@ -16,7 +16,7 @@ export const MainContainer = styled.div`
 export const TextItem = styled.div`
   padding: 16px;
   color: ${color.textLight};
-  ${(props) => font.size(props.fontSize)}
+  font-size: ${(props) => props.fontSize}rem;
   ${font.regular}
 `;
 
