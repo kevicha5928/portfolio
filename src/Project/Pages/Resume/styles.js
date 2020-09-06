@@ -1,6 +1,18 @@
 import styled from 'styled-components';
 import { color, font, mixin } from 'Shared/utils/styles';
 
+export const MainContainer = styled.div`
+  width: 1000px;
+  @media (max-width: 555px) {
+    width: 90%;
+  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ${mixin.scrollableY};
+`;
+
 export const TextItem = styled.div`
   color: ${color.textLight};
   ${font.size(48)}
@@ -11,4 +23,31 @@ export const Image = styled.img`
   height: auto;
   /* max-height: 100px; */
   max-width: 100px;
+`;
+
+export const Grid = styled.div`
+  max-width: 600px;
+  @media (max-width: 555px) {
+    width: 100%;
+  }
+  // margin: 0 auto;
+`;
+export const GridRow = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+`;
+
+export const GridItem = styled.div`
+  flex-basis: 20%;
+  -ms-flex: auto;
+  padding: 0px 8px 0px;
+  position: relative;
+  box-sizing: border-box;
+  color: ${color.textLight};
+  display: flex;
+  justify-content: center;
+  @media (max-width: 555px) {
+    flex-basis: 50%;
+  }
 `;

@@ -18,7 +18,7 @@ export const color = {
 
   backgroundDarkPrimary: grey[900],
   backgroundMedium: grey[800],
-  backgroundLight: '#ebecf0',
+  backgroundLight: grey[400],
   backgroundLightest: '#F4F5F7',
   backgroundLightPrimary: '#D2E5FE',
   backgroundLightSuccess: '#E4FCEF',

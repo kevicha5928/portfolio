@@ -1,8 +1,11 @@
 export const realDesc = [
-  'a Developer',
+  'an Engineer',
   'a Maker',
-  'a Software Engineer',
+  'a Developer',
+  // 'a Software Engineer',
   'a Creator',
-  'a Mechanical Engineer',
+  'an Adventurer',
+
+  // 'a Mechanical Engineer',
 ];
 export const memeDesc = ['Legend', 'a Foodie'];

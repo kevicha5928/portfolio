@@ -44,7 +44,9 @@ export const images = {
   software: [sortApp, code1],
 };
 
-export const Logos = {
-  lang: [react, javascript, python],
-  frame: [pandas, plotly, nodejs],
-};
+export const Logos = [
+  { img: react, desc: 'React', width: 100 },
+  { img: javascript, desc: 'Javascript', width: 90 },
+  { img: python, desc: 'Python', width: 90 },
+  { img: nodejs, desc: 'Node Js', width: 90 },
+];
