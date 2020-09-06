@@ -26,7 +26,7 @@ export const Description = styled.div`
   justify-content: flex-start;
   flex: 4;
   @media (max-width: 555px) {
-    flex: 1;
+    flex: 2;
   }
 `;
 export const Decorator = styled.div`
@@ -36,7 +36,7 @@ export const Decorator = styled.div`
   ${font.regular}
   display: flex;
   justify-content: flex-end;
-  flex: 1;
+  flex: 2;
 `;
 
 export const ItemDetail = styled.li`

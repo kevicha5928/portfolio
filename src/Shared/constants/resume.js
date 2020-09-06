@@ -30,7 +30,7 @@ export const experience = [
   {
     company: 'Meso Scale Discovery',
     startDate: 'May 2017',
-    endDate: null,
+    endDate: 'Current',
     currentJob: true,
     jobTitle: 'Automation Engineer II',
     details: [
