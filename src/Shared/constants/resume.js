@@ -1,4 +1,4 @@
-import { Logos } from './images';
+import { Logos, LogoObj } from './images';
 
 export const skills = {
   primary: Logos,
@@ -26,6 +26,8 @@ export const skills = {
   ],
 };
 
+const { python, cpp, arduino } = LogoObj;
+
 export const experience = [
   {
     company: 'Meso Scale Discovery',
@@ -33,61 +35,73 @@ export const experience = [
     endDate: 'Current',
     currentJob: true,
     jobTitle: 'Automation Engineer II',
+    relevantSkills: [
+      python,
+      {
+        icon: null,
+        title: 'Pandas',
+      },
+      {
+        icon: null,
+        title: 'Plotly',
+      },
+      {
+        icon: null,
+        title: 'PLC',
+      },
+      {
+        icon: null,
+        title: 'Machine Vision',
+      },
+      {
+        icon: null,
+        title: '6-Dof Robot Programming',
+      },
+    ],
     details: [
       {
         task:
           'Created an intellectual property proposal for a new method of machine vision assisted product assembly that would increase accuracy and reliability while decreasing system complexity.',
-        relevantSkills: null,
       },
       {
         task:
           'Developed Python application to read data from a PLC to improve logging capabilities and data analytics.',
-        relevantSkills: ['Python', 'Pandas'],
       },
       {
         task:
           'Created companion web application for data visualization from the aforementioned data logging program.',
-        relevantSkills: ['Ploty', 'Python', 'Pandas'],
       },
       {
         task:
-          'Created a Python application that collected data from an ultrasonic sensor to track sensor performance and provide metrics to improve calibration.',
-        relevantSkills: ['Python'],
+          'Created a python application that collected data from an ultrasonic sensor to track sensor performance and provide metrics to improve calibration.',
       },
       {
         task:
           'Provided critical software support to active production machines to ensure downtime was kept to a minimum.',
-        relevantSkills: null,
       },
       {
         task:
           'Led the effort to refactor existing PLC software routines which resulted in more readability and traceability',
-        relevantSkills: ['PLC', 'Clean-Coding'],
       },
       {
         task:
           'Optimized the PLC subroutines in a critical production machine resulting in a 20% improvement in production speed.',
-        relevantSkills: ['PLC', 'Optimization'],
       },
       {
         task:
           'Developed an adaptive self-correcting product assembly method to improve product quality. As a result, product yields increased to 99.8% from a previous ~96% yield.',
-        relevantSkills: ['PLC'],
       },
       {
         task:
           'Established a sequential code structure for robot motion control resulting in more readable code and increasing reliability.',
-        relevantSkills: ['PLC'],
       },
       {
         task:
           'Developed PLC code to generate robot position coordinates to reduce the number of robot positions that need to be manually taught. This resulted in less human induced error when robot positions needed to be retaught.',
-        relevantSkills: ['PLC', 'Optimization'],
       },
       {
         task:
           'Improved the accuracy and reliability of machine vision inspection systems by optimizing visual targets',
-        relevantSkills: ['PLC', 'Machine Vision', 'Optimization'],
       },
     ],
   },
@@ -97,11 +111,74 @@ export const experience = [
     endDate: 'May 2017',
     currentJob: false,
     jobTitle: 'Graduate Research Assistant',
-    details: [
+    relevantSkills: [
+      python,
+      cpp,
+
       {
-        task: 'Hello',
-        relevantSkills: null,
+        icon: null,
+        title: 'Computer Vision',
+      },
+      {
+        icon: null,
+        title: 'ROS',
       },
     ],
+    details: [
+      {
+        task: 'Project Lead on motion capture quadcopter project',
+      },
+      {
+        task:
+          'Developed application to use depth sensing and skeleton tracking capabilities of Microsoft Kinect V2 to tele-operate a robot arm',
+      },
+    ],
+  },
+  {
+    company: 'UMBC Prototyping and Design Lab',
+    startDate: 'June 2014',
+    endDate: 'May 2015',
+    currentJob: false,
+    jobTitle: 'Undergraduate Research Assistant',
+    relevantSkills: [
+      arduino,
+      {
+        icon: null,
+        title: '3D printing',
+      },
+      {
+        icon: null,
+        title: 'Laser Cutting',
+      },
+    ],
+    details: [
+      {
+        task:
+          'Collaborated in an interdisciplinary team to design, program, and build a multi-touch pressure pad interface with intended applications for clients who have muscular impairments located in their hands.',
+      },
+      {
+        task:
+          'Experimental results derived from my work have received positive feedback from ASSETS 2015, an internationally recognized computers/accessibility conference.',
+      },
+    ],
+  },
+];
+
+export const education = [
+  {
+    company: 'University of Maryland, Baltimore County',
+    startDate: 'June 2011',
+    endDate: 'May 2015',
+    jobTitle: 'B.S. in Mechanical Engineering',
+    gpa: 3.83,
+    education: 1,
+  },
+  {
+    company: 'University of Maryland, Baltimore County',
+    startDate: 'May 2015',
+    endDate: 'May 2017',
+    jobTitle: 'M.S. in Mechanical Engineering',
+    gpa: 3.85,
+    education: 1,
   },
 ];

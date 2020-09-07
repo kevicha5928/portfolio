@@ -38,6 +38,11 @@ export const zIndexValues = {
   navLeft: 100,
 };
 
+export const spacing = {
+  single: (space) => `${space * 8}px`,
+  double: (space) => `${space * 16}px`,
+};
+
 export const font = {
   regular: 'font-family: "RedHatDisplayRegular"; font-weight: normal;',
   medium: 'font-family: "RedHatDisplayMedium"; font-weight: normal;',

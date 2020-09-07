@@ -1,18 +1,16 @@
 import styled from 'styled-components';
-import { color, font, mixin, sizes } from 'Shared/utils/styles';
+import { color, font } from 'Shared/utils/styles';
 
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content_ flex-start;
+  justify-content: flex-start;
   align-items: center;
-    width: 900px;
-  height: 100%;
+  width: 900px;
   @media (max-width: 555px) {
     width: 90%;
   }
-  padding: 50px 0px 50px;
-
+  padding: 16px 0px 64px;
 `;
 
 export const TextItem = styled.div`
@@ -34,7 +32,7 @@ export const Grid = styled.div`
   @media (max-width: 555px) {
     width: 100%;
   }
-  // margin: 0 auto;
+  padding-bottom: 32px;
 `;
 export const GridRow = styled.div`
   display: flex;
@@ -52,6 +50,18 @@ export const GridItem = styled.div`
   display: flex;
   justify-content: center;
   @media (max-width: 555px) {
-    flex-basis: 50%;
+    flex-basis: 33.33%;
+  }
+`;
+
+export const TagContainer = styled.div`
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 65%;
+  padding-bottom: 32px;
+  /* padding-left: 8px; */
+  @media (max-width: 555px) {
+    width: 100%;
   }
 `;

@@ -28,11 +28,12 @@ import sortApp from './assets/software/sortApp.jpg';
 // Logos
 import javascript from './assets/logos/javascript.png';
 import python from './assets/logos/python.png';
-
 import react from './assets/logos/react.png';
 import redux from './assets/logos/redux.png';
 import firebase from './assets/logos/firebase3.webp';
 import nodejs from './assets/logos/nodejs.png';
+import arduino from './assets/logos/arduino.png';
+import cpp from './assets/logos/c++.png';
 
 export const images = {
   foodie: [dumps, fruitCup, honeyToast, iceCream, lomo, ramen, skewers],
@@ -50,3 +51,38 @@ export const Logos = [
   { img: redux, desc: 'Redux', width: 100 },
   { img: firebase, desc: 'Firebase', width: 100 },
 ];
+
+export const LogoObj = {
+  python: {
+    icon: python,
+    title: 'Python',
+  },
+  javascript: {
+    icon: javascript,
+    title: 'Javascript',
+  },
+  nodejs: {
+    icon: nodejs,
+    title: 'Node JS',
+  },
+  redux: {
+    icon: redux,
+    title: 'Redux',
+  },
+  firebase: {
+    icon: firebase,
+    title: 'Firebase',
+  },
+  react: {
+    icon: react,
+    title: 'React',
+  },
+  cpp: {
+    icon: cpp,
+    title: 'C++',
+  },
+  arduino: {
+    icon: arduino,
+    title: 'arduino',
+  },
+};

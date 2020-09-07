@@ -1,29 +1,65 @@
 import React, { Fragment } from 'react';
+import { Tag } from 'Shared/components';
 
-import { TextRow, Decorator, Description, ItemDetail } from './styles';
+import {
+  TextRow,
+  Decorator,
+  Description,
+  ItemDetail,
+  ExperienceContainer,
+  TagContainer,
+} from './styles';
 
 export default function ExperienceEntry({ experience }) {
-  const { company, startDate, endDate, currentJob, jobTitle, details } = experience;
+  const {
+    company,
+    startDate,
+    endDate,
+    jobTitle,
+    details,
+    relevantSkills,
+    education,
+    gpa,
+  } = experience;
   return (
-    <Fragment>
+    <ExperienceContainer>
       <TextRow>
-        <Description>{company}</Description>
-        <Decorator>
-          {startDate}
-          {endDate
-            ? ` to 
-          ${endDate}`
-            : null}
-        </Decorator>
+        <Description fontSize={education || 1.5}>{company}</Description>
+        {education ? <Decorator fontSize={1}>{endDate}</Decorator> : null}
       </TextRow>
       <TextRow>
-        <Description>{jobTitle}</Description>
+        <Description fontSize={1}>{jobTitle}</Description>
+        {education ? (
+          <Decorator>
+            GPA:&nbsp;
+            {gpa}
+          </Decorator>
+        ) : (
+          <Decorator fontSize={1}>
+            {startDate}
+            &nbsp;-&nbsp;
+            {endDate}
+          </Decorator>
+        )}
       </TextRow>
-      <ul>
-        {details.map((item, index) => (
-          <ItemDetail key={index.toString()}>{item.task}</ItemDetail>
-        ))}
-      </ul>
-    </Fragment>
+
+      {relevantSkills ? (
+        <Fragment>
+          <TextRow>
+            <Description fontSize={1}>Relevant Skills</Description>
+          </TextRow>
+          <TagContainer>
+            {relevantSkills.map((skill) => (
+              <Tag key={skill.title} skill={skill} />
+            ))}
+          </TagContainer>
+          <ul>
+            {details.map(({ task }, index) => (
+              <ItemDetail key={index.toString()}>{task}</ItemDetail>
+            ))}
+          </ul>
+        </Fragment>
+      ) : null}
+    </ExperienceContainer>
   );
 }

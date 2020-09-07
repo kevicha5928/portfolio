@@ -1,8 +1,8 @@
-import React, { Fragment } from 'react';
-import { Divider, ExperienceEntry } from 'Shared/components';
+import React from 'react';
+import { ExperienceEntry } from 'Shared/components';
 import { experience } from 'Shared/constants/resume';
 
-import { TextItem, MainContainer } from './styles';
+import { MainContainer } from './styles';
 
 export default function Experience() {
   return (
