@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, mixin } from 'Shared/utils/styles';
+import { color, font } from 'Shared/utils/styles';
 
 export const Grid = styled.div`
   max-width: 1500px;

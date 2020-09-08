@@ -2,10 +2,20 @@ import React, { useEffect, useState } from 'react';
 import { useTransition } from 'react-spring';
 import { realDesc, memeDesc } from 'Shared/constants/descriptors';
 import { red, purple, blue, cyan, green, yellow, orange } from '@material-ui/core/colors';
+import AboutMe from './AboutMe';
 // import usePrevious from 'Shared/hooks/usePrevious';
 
 import Slideshow from './Slideshow';
-import { Grid, GridRow, MainText, GridItem, AniText, AniTextContainer, TextRow } from './styles';
+import {
+  Grid,
+  GridRow,
+  MainText,
+  GridItem,
+  AniText,
+  AniTextContainer,
+  TextRow,
+  MainContainer,
+} from './styles';
 
 function Home() {
   const [cycle, setCycle] = useState(0);
@@ -47,33 +57,37 @@ function Home() {
   });
 
   return (
-    <Grid id="grid">
-      <GridRow>
-        <GridItem>
-          <TextRow>
-            <MainText>Hi, I&apos;m&nbsp;</MainText>
-            <MainText weight="bold">Kevin</MainText>
-            <MainText>.</MainText>
-          </TextRow>
-          <TextRow>
-            <MainText>I am&nbsp;</MainText>
-            <AniTextContainer>
-              {transitions.map(({ item, props, key }) => {
-                return (
-                  <AniText key={key} style={props} color={color}>
-                    {item}
-                  </AniText>
-                );
-              })}
-            </AniTextContainer>
-          </TextRow>
-        </GridItem>
+    <MainContainer>
+      <Grid id="grid">
+        <GridRow>
+          <GridItem>
+            <TextRow>
+              <MainText>Hi, I&apos;m&nbsp;</MainText>
+              <MainText weight="bold">Kevin</MainText>
+              <MainText>.</MainText>
+            </TextRow>
+            <TextRow>
+              <MainText>I am&nbsp;</MainText>
+              <AniTextContainer>
+                {transitions.map(({ item, props, key }) => {
+                  return (
+                    <AniText key={key} style={props} color={color}>
+                      {item}
+                    </AniText>
+                  );
+                })}
+              </AniTextContainer>
+            </TextRow>
+          </GridItem>
 
-        <GridItem>
-          <Slideshow desc={title} />
-        </GridItem>
-      </GridRow>
-    </Grid>
+          <GridItem>
+            <Slideshow desc={title} />
+          </GridItem>
+        </GridRow>
+      </Grid>
+
+      <AboutMe />
+    </MainContainer>
   );
 }
 

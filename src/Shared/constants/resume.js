@@ -182,3 +182,6 @@ export const education = [
     education: 1,
   },
 ];
+
+export const aboutMe =
+  'I am an aspiring software engineer, looking for problems to solve. Originally, I studied and trained as a Mechanical Engineer, but over time I realized that a vast majority of the cooler projects in the world were deeply intertwined with software. It was simply not enough to stop and be satisfied with mechanical design.';

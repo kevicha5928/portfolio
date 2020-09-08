@@ -3,15 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 /** DO NOT ALTER THIS FILE. It is a copy of https://necolas.github.io/normalize.css/ */
 
 export default createGlobalStyle`
-  #root {  
-    
-    position: absolute;      
-  }
-  html,body, #root{
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
+ 
+
   html {
     line-height: 1.15;
     -webkit-text-size-adjust: 100%;

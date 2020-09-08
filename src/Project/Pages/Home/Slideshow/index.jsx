@@ -46,7 +46,7 @@ function Slideshow({ desc }) {
   });
 
   return (
-    <AniContainer>
+    <AniContainer id="slideshow">
       {transitions.map(({ item, props, key }) => {
         return (
           <AniImg key={key} style={props} src={item}>

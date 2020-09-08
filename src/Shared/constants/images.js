@@ -83,6 +83,6 @@ export const LogoObj = {
   },
   arduino: {
     icon: arduino,
-    title: 'arduino',
+    title: 'Arduino',
   },
 };
