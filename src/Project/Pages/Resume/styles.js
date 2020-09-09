@@ -65,3 +65,9 @@ export const TagContainer = styled.div`
     width: 100%;
   }
 `;
+
+export const DownloadFile = styled.a`
+  ${font.regular}
+  color: ${color.textLight};
+  ${font.sizeRem(2)}
+`;

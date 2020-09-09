@@ -2,13 +2,26 @@ import React from 'react';
 import { Divider, ExperienceEntry, Tag } from 'Shared/components';
 // import { Logos } from 'Shared/constants/images';
 import { skills, experience, education } from 'Shared/constants/resume';
+import resume from 'Shared/constants/assets/Kchang_SW_CV_04Sep2020.pdf';
+
 import IconSkill from './IconSkill';
-import { TextItem, MainContainer, GridRow, GridItem, Grid, TagContainer } from './styles';
+import {
+  TextItem,
+  MainContainer,
+  GridRow,
+  GridItem,
+  Grid,
+  TagContainer,
+  DownloadFile,
+} from './styles';
 
 export default function Resume() {
   return (
     <MainContainer id="resume">
       {/* <TextItem fontSize={3}>Kevin Chang</TextItem> */}
+      <DownloadFile href={resume} download="Chang_Kevin_Resume">
+        Download Resume
+      </DownloadFile>
       <TextItem fontSize={3}>
         Primary Skills
         <Divider />

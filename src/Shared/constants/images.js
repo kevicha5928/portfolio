@@ -34,6 +34,7 @@ import firebase from './assets/logos/firebase3.webp';
 import nodejs from './assets/logos/nodejs.png';
 import arduino from './assets/logos/arduino.png';
 import cpp from './assets/logos/c++.png';
+import mui from './assets/logos/mui.png';
 
 export const images = {
   foodie: [dumps, fruitCup, honeyToast, iceCream, lomo, ramen, skewers],
@@ -50,6 +51,7 @@ export const Logos = [
   { img: nodejs, desc: 'Node Js', width: 90 },
   { img: redux, desc: 'Redux', width: 100 },
   { img: firebase, desc: 'Firebase', width: 100 },
+  { img: mui, desc: 'Material-UI', width: 100 },
 ];
 
 export const LogoObj = {
@@ -84,5 +86,9 @@ export const LogoObj = {
   arduino: {
     icon: arduino,
     title: 'Arduino',
+  },
+  mui: {
+    icon: mui,
+    title: 'Material-UI',
   },
 };

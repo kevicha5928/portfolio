@@ -1,11 +1,12 @@
 import styled from 'styled-components';
-import { color, font, mixin, spacing } from 'Shared/utils/styles';
+import { color, font, mixin } from 'Shared/utils/styles';
 
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0px;
 
   @media (max-width: 555px) {
     width: 80%;

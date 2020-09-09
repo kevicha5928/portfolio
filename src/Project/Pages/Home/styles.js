@@ -7,6 +7,10 @@ import { color, font, mixin } from 'Shared/utils/styles';
 export const MainContainer = styled.div`
   width: 100%;
   max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export const Grid = styled.div`
@@ -15,6 +19,7 @@ export const Grid = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  width: 100%;
 
   margin: 0 auto;
   @media (max-width: 555px) {

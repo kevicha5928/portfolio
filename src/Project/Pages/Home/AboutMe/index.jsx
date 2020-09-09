@@ -8,7 +8,7 @@ export default function AboutMe() {
   const aboutMeRef = useRef();
 
   return (
-    <MainContainer>
+    <MainContainer id="about">
       <ButtonContainer>
         <Button onClick={() => aboutMeRef.current.scrollIntoView({ behavior: 'smooth' })}>
           About me
