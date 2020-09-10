@@ -1,11 +1,12 @@
 import sortApp from './assets/software/sortApp.jpg';
 import peetz from './assets/software/PizzaApp.png';
 import workoutapp from './assets/software/workoutapp.jpg';
+import cameraTrack from './assets/maker/cameratrack.jpg';
 // import exerMaterial from './assets/software/exerMaterial.png';
 
 import { LogoObj } from './images';
 
-const { arduino, javascript, react, redux, nodejs, firebase, Mui } = LogoObj;
+const { arduino, javascript, react, redux, nodejs, firebase, mui } = LogoObj;
 
 export const portfolio = [
   {
@@ -16,7 +17,7 @@ export const portfolio = [
     git: null,
     website: 'https://workouthero.herokuapp.com/',
     youtube: null,
-    relavantSkills: [react, javascript, nodejs, firebase, redux, Mui],
+    relavantSkills: [react, javascript, nodejs, firebase, redux, mui],
     status: 'in progress',
   },
   {
@@ -27,7 +28,7 @@ export const portfolio = [
     git: 'https://github.com/kevicha5928/Sorting-Visualizer',
     website: 'https://kevicha5928.github.io/Sorting-Visualizer/',
     youtube: null,
-    relavantSkills: [react, javascript, nodejs, Mui],
+    relavantSkills: [react, javascript, nodejs, mui],
     status: 'complete',
   },
   {
@@ -43,7 +44,7 @@ export const portfolio = [
   {
     title: 'Motorized Camera Slider',
     description: 'Designed a relatively inexpensive DIY motorized camera slider',
-    image: sortApp,
+    image: cameraTrack,
     git: 'https://github.com/kevicha5928/Arduino-Motorized-Camera-Slider',
     website: null,
     youtube: 'https://www.youtube.com/watch?v=bMuzOfMlkrY',

@@ -1,15 +1,36 @@
 import React from 'react';
-import { images } from 'Shared/constants/images';
-
-import { Grid, GridRow, GridItem, Image } from './styles';
+import { portfolio } from 'Shared/constants/portfolio';
+import { Divider, Tag } from 'Shared/components';
+import {
+  Grid,
+  GridRow,
+  GridItem,
+  Image,
+  Card,
+  TextItem,
+  ImageContainer,
+  TagContainer,
+} from './styles';
 
 export default function Portfolio() {
   return (
     <Grid>
       <GridRow>
-        {images.foodie.map((item) => (
+        {portfolio.map((project) => (
           <GridItem>
-            <Image src={item} />
+            <Card>
+              <ImageContainer>
+                <Image src={project.image} />
+              </ImageContainer>
+              <Divider />
+              <TextItem fontSize={2}>{project.title}</TextItem>
+              <TextItem>{project.description}</TextItem>
+              <TagContainer>
+                {project.relavantSkills.map((skill) => (
+                  <Tag ey={skill.title} skill={skill} />
+                ))}
+              </TagContainer>
+            </Card>
           </GridItem>
         ))}
       </GridRow>
