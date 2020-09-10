@@ -1,33 +1,23 @@
 import React from 'react';
 import { portfolio } from 'Shared/constants/portfolio';
 import { Divider, Tag } from 'Shared/components';
-import {
-  Grid,
-  GridRow,
-  GridItem,
-  Image,
-  Card,
-  TextItem,
-  ImageContainer,
-  TagContainer,
-} from './styles';
+import { Grid, GridRow, GridItem, Card, TextItem, TagContainer } from './styles';
+import ImageLinks from './ImageLinks';
 
 export default function Portfolio() {
   return (
     <Grid>
       <GridRow>
         {portfolio.map((project) => (
-          <GridItem>
+          <GridItem key={project.title}>
             <Card>
-              <ImageContainer>
-                <Image src={project.image} />
-              </ImageContainer>
+              <ImageLinks project={project} />
               <Divider />
               <TextItem fontSize={2}>{project.title}</TextItem>
               <TextItem>{project.description}</TextItem>
               <TagContainer>
                 {project.relavantSkills.map((skill) => (
-                  <Tag ey={skill.title} skill={skill} />
+                  <Tag key={skill.title} skill={skill} />
                 ))}
               </TagContainer>
             </Card>

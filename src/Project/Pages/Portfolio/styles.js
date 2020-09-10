@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+
 import { color, font, spacing } from 'Shared/utils/styles';
 
 export const Grid = styled.div`
@@ -49,6 +50,7 @@ export const TextItem = styled.div`
 `;
 
 export const ImageContainer = styled.div`
+  position: relative;
   height: 60%;
   width: 100%;
   overflow: hidden;
