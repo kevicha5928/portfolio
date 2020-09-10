@@ -53,7 +53,7 @@ export default function Resume() {
         <Divider />
       </TextItem>
       {education.map((item) => (
-        <ExperienceEntry key={`${item.company}${item.jobtitle}`} experience={item} />
+        <ExperienceEntry key={`${item.company}${item.jobTitle}`} experience={item} />
       ))}
     </MainContainer>
   );

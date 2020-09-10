@@ -1,37 +1,36 @@
 import styled from 'styled-components';
 import { animated } from 'react-spring';
-import { color, font, spacing } from 'Shared/utils/styles';
+
+import { font } from 'Shared/utils/styles';
+
+export const DividerContainer = styled.div`
+  width: 90%;
+`;
 
 export const Animated = styled(animated.div)`
   position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
-`;
-
-export const LinksContainer = styled.div`
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-`;
-// export const LinkButton = styled.div`
-// background:
-// `
-export const Image = styled.img`
-  width: 100%;
-  object-fit: cover;
-  object-position: 0px 10%;
+  z-index: 2;
 `;
 
 export const ImageContainer = styled.div`
   position: relative;
-  height: 60%;
+  flex: 2.5;
   width: 100%;
   overflow: hidden;
-  &:hover ${Image} {
+`;
+export const Image = styled.img`
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  object-position: 0px 10%;
+  ${ImageContainer}:hover & {
+    background: linear-gradient(rgba(0, 0, 0, 0.7));
     filter: blur(0.5rem);
   }
 `;

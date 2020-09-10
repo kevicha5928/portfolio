@@ -1,6 +1,6 @@
 import { css } from 'styled-components';
 import Color from 'color';
-import { grey } from '@material-ui/core/colors';
+import { grey, blueGrey } from '@material-ui/core/colors';
 
 export const color = {
   primary: '#0052cc', // Blue
@@ -22,6 +22,8 @@ export const color = {
   backgroundLightest: '#F4F5F7',
   backgroundLightPrimary: '#D2E5FE',
   backgroundLightSuccess: '#E4FCEF',
+
+  cardColor: blueGrey[900],
 
   borderLightest: '#dfe1e6',
   borderLight: '#C1C7D0',

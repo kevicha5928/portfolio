@@ -1,16 +1,25 @@
 import React, { useState } from 'react';
-import { useTransition } from 'react-spring';
+import { useTransition, config } from 'react-spring';
+// import { Divider } from 'Shared/components';
+
 import { Animated, ImageContainer, Image } from './styles';
 import LinkList from './LinkList';
 
 export default function ImageLinks({ project }) {
   const [showLinks, setShowLinks] = useState(false);
-  console.log(showLinks);
-  const transitions = useTransition(showLinks, null, {
-    from: { transform: 'translate3d(0,100px,0)' },
-    enter: { transform: 'translate3d(0,0,0)' },
-    leave: { transform: 'translate3d(0,100px,0)' },
+  // console.log(showLinks);
+  const linkTrans = useTransition(showLinks, null, {
+    from: { opacity: 0, transform: 'translate3d(0,10px,0)' },
+    enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
+    leave: { opacity: 0, transform: 'translate3d(0,0,0)' },
+    config: config.gentle,
   });
+  // const dividerTrans = useTransition(showLinks, null, {
+  //   from: { opacity: 0 },
+  //   enter: { opacity: 1 },
+  //   leave: { opacity: 0 },
+  //   config: config.stiff,
+  // });
 
   const handleHover = (isHover) => {
     setShowLinks(isHover);
@@ -18,7 +27,7 @@ export default function ImageLinks({ project }) {
 
   return (
     <ImageContainer onMouseEnter={() => handleHover(true)} onMouseLeave={() => handleHover(false)}>
-      {transitions.map(
+      {linkTrans.map(
         ({ item, props, key }) =>
           item && (
             <Animated key={key} style={props}>

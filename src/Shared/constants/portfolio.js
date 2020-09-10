@@ -10,7 +10,7 @@ const { arduino, javascript, react, redux, nodejs, firebase, mui } = LogoObj;
 
 export const portfolio = [
   {
-    title: 'Weight Lifting App',
+    title: 'Weight Lifting Tracker',
     description:
       'An application to allow uers to create custom workouts and workout schedules and track their progress as they improve',
     image: workoutapp,
