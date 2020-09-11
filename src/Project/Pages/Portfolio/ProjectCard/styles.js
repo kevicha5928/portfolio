@@ -15,7 +15,7 @@ export const GridItem = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 555px) {
+  @media (max-width: 1200px) {
     flex-basis: 100%;
   }
 `;

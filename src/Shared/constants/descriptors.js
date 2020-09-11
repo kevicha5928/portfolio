@@ -5,6 +5,7 @@ export const realDesc = [
   // 'a Software Engineer',
   'a Creator',
   'an Adventurer',
+  'a Chef',
 
   // 'a Mechanical Engineer',
 ];

@@ -7,7 +7,7 @@ export default function Portfolio() {
   // console.log(portfolio);
   return (
     <Grid>
-      <GridRow>
+      <GridRow id="gridrow">
         {portfolio.map((project) => (
           <ProjectCard project={project} key={project.title} />
         ))}

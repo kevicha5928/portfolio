@@ -22,10 +22,16 @@ function Slideshow({ desc }) {
         case 'Engineer':
           targImg = software[genIdx(software.length)];
           break;
+        case 'Developer':
+          targImg = software[genIdx(software.length)];
+          break;
         case 'Chef':
           targImg = myfood[genIdx(myfood.length)];
           break;
         case 'Maker':
+          targImg = maker[genIdx(maker.length)];
+          break;
+        case 'Creator':
           targImg = maker[genIdx(maker.length)];
           break;
         case 'Foodie':

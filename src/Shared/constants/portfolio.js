@@ -1,6 +1,6 @@
 import sortApp from './assets/software/sortApp.jpg';
 import peetz from './assets/software/PizzaApp.png';
-import workoutapp from './assets/software/workoutapp.jpg';
+import workoutapp from './assets/software/workoutapp2.jpg';
 import cameraTrack from './assets/maker/cameratrack.jpg';
 // import exerMaterial from './assets/software/exerMaterial.png';
 

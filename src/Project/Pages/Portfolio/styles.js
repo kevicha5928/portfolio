@@ -11,6 +11,7 @@ export const GridRow = styled.div`
   flex-flow: row wrap;
   justify-content: flex-start;
   padding: ${spacing.single(6)};
+
   @media (max-width: 555px) {
     padding: ${spacing.single(2)};
   }

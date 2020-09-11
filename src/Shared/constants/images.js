@@ -24,6 +24,8 @@ import rocky2 from './assets/travel/rocky2.jpg';
 // Engineering
 import code1 from './assets/software/code1.jpg';
 import sortApp from './assets/software/sortApp.jpg';
+import peetz from './assets/software/PizzaApp.png';
+import workoutapp from './assets/software/workoutapp2.jpg';
 
 // Logos
 import javascript from './assets/logos/javascript.png';
@@ -41,7 +43,7 @@ export const images = {
   maker: [cameraTrack, labcube, labcube2, quad],
   myfood: [alfredo, bread, margherita, mylomo, peetz1, steak1],
   travel: [rocky1, rocky2],
-  software: [sortApp, code1],
+  software: [sortApp, code1, peetz, workoutapp],
 };
 
 export const Logos = [

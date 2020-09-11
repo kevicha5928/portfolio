@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font, mixin, spacing } from 'Shared/utils/styles';
+import { color, font, spacing } from 'Shared/utils/styles';
 import { Email, GitHub, LinkedIn } from '@material-ui/icons';
 // import { sizes } from 'Shared/utils/styles';
 

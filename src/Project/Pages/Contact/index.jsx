@@ -1,14 +1,6 @@
 import React from 'react';
 
-import {
-  MainContainer,
-  TextItem,
-  IconRow,
-  EmailIcon,
-  GitHubIcon,
-  LinkedInIcon,
-  Button,
-} from './styles';
+import { MainContainer, TextItem, EmailIcon, GitHubIcon, LinkedInIcon, Button } from './styles';
 
 export default function Contact() {
   return (
