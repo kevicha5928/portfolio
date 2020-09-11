@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://kevicha5928.github.io/portfolio",
+  "homepage": "https://kevicha5928.github.io/portfolio",
   "devDependencies": {
     "eslint": "^6.6.0",
     "eslint-config-airbnb": "^18.2.0",

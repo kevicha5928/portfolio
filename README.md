@@ -1,4 +1,4 @@
-[Website here](http://kevicha5928.github.io/portfolio)
+[Website here](https://kevicha5928.github.io/portfolio)
 
 # Project structure 🏗
 
