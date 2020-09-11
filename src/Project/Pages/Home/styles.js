@@ -14,7 +14,7 @@ export const MainContainer = styled.div`
 `;
 
 export const Grid = styled.div`
-  height: 70vh;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

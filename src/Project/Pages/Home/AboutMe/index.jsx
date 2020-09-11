@@ -16,7 +16,11 @@ export default function AboutMe() {
         <Divider />
       </ButtonContainer>
 
-      <Description ref={aboutMeRef}>{aboutMe}</Description>
+      <Description ref={aboutMeRef}>{aboutMe.part1}</Description>
+      <Description bold fontSize={1.35}>
+        {aboutMe.part2}
+      </Description>
+      <Description>{aboutMe.part3}</Description>
     </MainContainer>
   );
 }

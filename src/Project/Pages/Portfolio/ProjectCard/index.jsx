@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Divider, Tag } from 'Shared/components';
+import { Tag } from 'Shared/components';
 import { useTransition, config } from 'react-spring';
 
 import {
@@ -39,7 +39,7 @@ export default function ProjectCard({ project }) {
             item ? (
               <Animated key={key} style={props}>
                 <TextContainer>
-                  <TextItem fontSize={2}>{project.title}</TextItem>
+                  <TextItem fontSize={1.75}>{project.title}</TextItem>
                   <TextItem>{project.description}</TextItem>
                 </TextContainer>
               </Animated>

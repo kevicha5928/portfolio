@@ -183,5 +183,10 @@ export const education = [
   },
 ];
 
-export const aboutMe =
-  'I am an aspiring software engineer, looking for problems to solve. Originally, I studied as a Mechanical Engineer, but over time I realized that a vast majority of the cooler projects in the world were deeply intertwined with software. So yea, I knew I could not just stop and be satisfied with learning mechanical design. I had to dive into software as well.';
+export const aboutMe = {
+  part1:
+    'I am an aspiring software engineer, looking for problems to solve. Originally, I studied as a Mechanical Engineer, but over time I realized that a vast majority of the cooler projects in the world were deeply intertwined with software. I knew I could not stop and be satisfied with learning mechanical design. Thus began my journey into software development.',
+  part2: 'I am 100% self-taught, self-studied, and self-struggled.',
+  part3:
+    "To be honest, it wasn't easy to juggle a full-time job along side learning programming and developing apps. To have to come home after a long day of work just to sit in front of a computer and be at the mercy of the internet for my undirected learning. It was hard, but I don't regret any of it. Every day it gets a little easier. Every day I learn something new, improve on a previous design, or chip away at making something new. Its certainly been a struggle, but its also been a deeply rewarding experience!",
+};

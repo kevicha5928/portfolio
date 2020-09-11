@@ -1,12 +1,12 @@
 import styled from 'styled-components';
-import { color, font, mixin } from 'Shared/utils/styles';
+import { color, font, mixin, spacing } from 'Shared/utils/styles';
 
 export const MainContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0px;
+  margin-bottom: 16px;
 
   @media (max-width: 555px) {
     width: 80%;
@@ -14,9 +14,6 @@ export const MainContainer = styled.div`
 `;
 
 export const ButtonContainer = styled.div`
-  @media (max-width: 555px) {
-    height: 20vh;
-  }
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -31,8 +28,16 @@ export const Button = styled.div`
 `;
 export const Description = styled.p`
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   color: ${color.textLight};
+  ${(props) => (props.bold ? font.bold : font.regular)}
+
+  ${(props) => font.sizeRem(props.fontSize ? props.fontSize : 1.25)}
+  margin: ${spacing.single(2)};
+`;
+
+export const TextItem = styled.div`
+  ${(props) => font.sizeRem(props.fontSize ? props.fontSize : 1)}
   ${font.regular}
-  ${font.sizeRem(1.25)}
+  padding-bottom: ${spacing.single(1)};
 `;
