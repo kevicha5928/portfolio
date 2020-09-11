@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { color, font } from 'Shared/utils/styles';
+import { color, font, spacing } from 'Shared/utils/styles';
 
 export const MainContainer = styled.div`
   display: flex;
@@ -66,8 +66,16 @@ export const TagContainer = styled.div`
   }
 `;
 
-export const DownloadFile = styled.a`
+export const DownloadFileButton = styled.a`
   ${font.regular}
   color: ${color.textLight};
   ${font.sizeRem(2)}
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: ${color.buttonColor};
+  padding: 0px ${spacing.single(1)};
+  border-radius: 8px;
+  margin: ${spacing.single(4)};
 `;

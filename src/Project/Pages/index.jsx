@@ -5,6 +5,7 @@ import usePrevious from 'Shared/hooks/usePrevious';
 import Home from './Home';
 import Portfolio from './Portfolio';
 import Resume from './Resume';
+import Contact from './Contact';
 
 import { AniContainer, Animated } from './styles';
 
@@ -30,7 +31,7 @@ export default function Pages() {
   the parent Container's transform value would change away from a none value to 
   translate3d(0,0,0)
   */
-  const pages = [<Home />, <Portfolio />, <Resume />, <div>D</div>];
+  const pages = [<Home />, <Portfolio />, <Resume />, <Contact />];
 
   return (
     <AniContainer>

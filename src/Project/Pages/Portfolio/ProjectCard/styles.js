@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { animated } from 'react-spring';
 
 import { color, font, spacing, mixin } from 'Shared/utils/styles';
 
@@ -61,15 +62,28 @@ export const TagContainer = styled.div`
 `;
 
 export const DetailContainer = styled.div`
+  position: relative;
   flex: 1;
-  padding: ${spacing.single(2)};
   ${mixin.scrollableY};
 `;
 
 export const TextContainer = styled.div`
+  padding: ${spacing.single(2)};
+
   height: 150px;
 `;
 
 export const SkillsContainer = styled.div`
+  padding: ${spacing.single(2)};
+
   height: 150px;
+`;
+
+export const Animated = styled(animated.div)`
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 `;

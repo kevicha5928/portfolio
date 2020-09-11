@@ -10,7 +10,7 @@ const { arduino, javascript, react, redux, nodejs, firebase, mui } = LogoObj;
 
 export const portfolio = [
   {
-    title: 'Weight Lifting Tracker',
+    title: 'Weight Lifting Tracker (WIP)',
     description:
       'An application to allow uers to create custom workouts and workout schedules and track their progress as they improve',
     image: workoutapp,
@@ -54,7 +54,7 @@ export const portfolio = [
       },
     ],
 
-    relavantSkills: [arduino],
+    relavantSkills: [react, mui, javascript],
     status: 'in progress',
   },
   {
@@ -72,7 +72,11 @@ export const portfolio = [
       },
     ],
 
-    relavantSkills: [arduino],
+    relavantSkills: [
+      arduino,
+      { icon: null, title: 'Solidworks' },
+      { icon: null, title: '3D Printing' },
+    ],
     status: 'complete',
   },
 ];

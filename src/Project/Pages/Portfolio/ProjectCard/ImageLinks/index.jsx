@@ -12,7 +12,7 @@ export default function ImageLinks({ project }) {
     from: { opacity: 0, transform: 'translate3d(0,10px,0)' },
     enter: { opacity: 1, transform: 'translate3d(0,0,0)' },
     leave: { opacity: 0, transform: 'translate3d(0,0,0)' },
-    config: config.gentle,
+    config: config.stiff,
   });
   // const dividerTrans = useTransition(showLinks, null, {
   //   from: { opacity: 0 },

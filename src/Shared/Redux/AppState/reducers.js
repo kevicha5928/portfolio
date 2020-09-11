@@ -1,7 +1,7 @@
 import { app } from 'Shared/constants/types';
 
 const initState = {
-  activePage: 1,
+  activePage: 3,
 };
 
 const appState = (state = initState, action) => {

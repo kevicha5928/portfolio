@@ -1,6 +1,6 @@
 import React from 'react';
 import { Divider, ExperienceEntry, Tag } from 'Shared/components';
-// import { Logos } from 'Shared/constants/images';
+import GetAppIcon from '@material-ui/icons/GetApp';
 import { skills, experience, education } from 'Shared/constants/resume';
 import resume from 'Shared/constants/assets/Kchang_SW_CV_04Sep2020.pdf';
 
@@ -12,16 +12,16 @@ import {
   GridItem,
   Grid,
   TagContainer,
-  DownloadFile,
+  DownloadFileButton,
 } from './styles';
 
 export default function Resume() {
   return (
     <MainContainer id="resume">
-      {/* <TextItem fontSize={3}>Kevin Chang</TextItem> */}
-      <DownloadFile href={resume} download="Chang_Kevin_Resume">
-        Download Resume
-      </DownloadFile>
+      <DownloadFileButton href={resume} download="Chang_Kevin_Resume">
+        <TextItem>Download Resume</TextItem>
+        <GetAppIcon fontSize="large" />
+      </DownloadFileButton>
       <TextItem fontSize={3}>
         Primary Skills
         <Divider />
