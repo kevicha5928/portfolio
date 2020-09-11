@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.0f7edb03.chunk.css",
-    "main.js": "/portfolio/static/js/main.fbfe8412.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.fbfe8412.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.8dcc0875.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.8dcc0875.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.209c2d7e.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.209c2d7e.js.map",
-    "static/js/2.a424fb4f.chunk.js": "/portfolio/static/js/2.a424fb4f.chunk.js",
-    "static/js/2.a424fb4f.chunk.js.map": "/portfolio/static/js/2.a424fb4f.chunk.js.map",
+    "static/js/2.6e56ddf1.chunk.js": "/portfolio/static/js/2.6e56ddf1.chunk.js",
+    "static/js/2.6e56ddf1.chunk.js.map": "/portfolio/static/js/2.6e56ddf1.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.c5c53629187be8a65a279ce6ce0947db.js": "/portfolio/precache-manifest.c5c53629187be8a65a279ce6ce0947db.js",
+    "precache-manifest.f718b2efac7a8893833bb52d0d133bdd.js": "/portfolio/precache-manifest.f718b2efac7a8893833bb52d0d133bdd.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/main.0f7edb03.chunk.css.map": "/portfolio/static/css/main.0f7edb03.chunk.css.map",
-    "static/js/2.a424fb4f.chunk.js.LICENSE.txt": "/portfolio/static/js/2.a424fb4f.chunk.js.LICENSE.txt",
+    "static/js/2.6e56ddf1.chunk.js.LICENSE.txt": "/portfolio/static/js/2.6e56ddf1.chunk.js.LICENSE.txt",
     "static/media/Kchang_SW_CV_04Sep2020.pdf": "/portfolio/static/media/Kchang_SW_CV_04Sep2020.2d73bfbf.pdf",
     "static/media/PizzaApp.png": "/portfolio/static/media/PizzaApp.54d5f7fb.png",
     "static/media/fontStyles.css": "/portfolio/static/media/RedHatDisplay-Regular.e4690c07.ttf",
@@ -43,12 +43,12 @@
     "static/media/skewers.jpg": "/portfolio/static/media/skewers.3e32e7bf.jpg",
     "static/media/sortApp.jpg": "/portfolio/static/media/sortApp.13823d82.jpg",
     "static/media/steak1.jpg": "/portfolio/static/media/steak1.311d8e04.jpg",
-    "static/media/workoutapp.jpg": "/portfolio/static/media/workoutapp.27a203fd.jpg"
+    "static/media/workoutapp2.jpg": "/portfolio/static/media/workoutapp2.fc37770a.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.209c2d7e.js",
-    "static/js/2.a424fb4f.chunk.js",
+    "static/js/2.6e56ddf1.chunk.js",
     "static/css/main.0f7edb03.chunk.css",
-    "static/js/main.fbfe8412.chunk.js"
+    "static/js/main.8dcc0875.chunk.js"
   ]
 }
