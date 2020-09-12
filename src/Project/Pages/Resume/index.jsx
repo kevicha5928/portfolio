@@ -1,8 +1,7 @@
 import React from 'react';
 import { Divider, ExperienceEntry, Tag } from 'Shared/components';
 import GetAppIcon from '@material-ui/icons/GetApp';
-import { skills, experience, education } from 'Shared/constants/resume';
-import resume from 'Shared/constants/assets/Kchang_SW_CV_04Sep2020.pdf';
+import { skills, experience, education, resume } from 'Shared/constants/resume';
 
 import IconSkill from './IconSkill';
 import {

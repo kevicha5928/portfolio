@@ -1,8 +1,13 @@
+import downloadableResume from 'Shared/constants/assets/Kchang_SW_CV_10Sep2020.pdf';
 import { Logos, LogoObj } from './images';
+
+export const resume = downloadableResume;
 
 export const skills = {
   primary: Logos,
   other: [
+    'CSS',
+    'Styled-Components',
     'Matlab',
     'SQL',
     'Pandas',
@@ -188,5 +193,5 @@ export const aboutMe = {
     'I am an aspiring software engineer, looking for problems to solve. Originally, I studied as a Mechanical Engineer, but over time I realized that a vast majority of the cooler projects in the world were deeply intertwined with software. I knew I could not stop and be satisfied with learning mechanical design. Thus began my journey into software development.',
   part2: 'I am 100% self-taught, self-studied, and self-struggled.',
   part3:
-    "To be honest, it wasn't easy to juggle a full-time job along side learning programming and developing apps. To have to come home after a long day of work just to sit in front of a computer and be at the mercy of the internet for my undirected learning. It was hard, but I don't regret any of it. Every day it gets a little easier. Every day I learn something new, improve on a previous design, or chip away at making something new. Its certainly been a struggle, but its also been a deeply rewarding experience!",
+    "To be honest, it wasn't easy to juggle a full-time job along side learning programming and developing apps. To have to come home after a long day of work just to sit in front of a computer and be at the mercy of the internet for my undirected learning. It was hard, but I don't regret any of it. Every day it gets a little easier. Every day I learn something new, improve on a previous design, or chip away at making something new. This journey has certainly been a struggle, but it's also been a deeply rewarding experience!",
 };

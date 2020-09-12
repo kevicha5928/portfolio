@@ -31,7 +31,7 @@ function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       const temp = Math.floor(Math.random() * 101);
-      if (temp < 85) {
+      if (temp < 90) {
         if (cycle < realDesc.length - 1) {
           setCycle(cycle + 1);
           setTitle(realDesc[cycle + 1]);
