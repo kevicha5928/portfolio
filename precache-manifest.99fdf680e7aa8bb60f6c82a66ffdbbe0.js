@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e86aa44a7566fe853e93ddb77dfeb22b",
+    "revision": "b859e14ac50d257984b556f906065f83",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "b379bd5560ae4d8d42aa",
+    "revision": "0034e58eb14368c29a7b",
     "url": "/portfolio/static/css/main.0f7edb03.chunk.css"
   },
   {
@@ -16,16 +16,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.6e56ddf1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b379bd5560ae4d8d42aa",
-    "url": "/portfolio/static/js/main.c9d53ae7.chunk.js"
+    "revision": "0034e58eb14368c29a7b",
+    "url": "/portfolio/static/js/main.8cce301c.chunk.js"
   },
   {
     "revision": "7a6cc99bd8f08f9fa6ec",
     "url": "/portfolio/static/js/runtime-main.209c2d7e.js"
   },
   {
-    "revision": "db7bdc24d357e3f257fed6f954425820",
-    "url": "/portfolio/static/media/Kchang_SW_CV_10Sep2020.db7bdc24.pdf"
+    "revision": "e9d759080cea88f19d5038ae4002a0c9",
+    "url": "/portfolio/static/media/Kchang_SW_CV_16Sep2020.e9d75908.pdf"
   },
   {
     "revision": "54d5f7fb12e7a39b96dfdf7cb2aafcd4",
