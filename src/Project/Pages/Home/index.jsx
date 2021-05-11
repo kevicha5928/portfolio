@@ -86,7 +86,7 @@ function Home() {
         </GridRow>
       </Grid>
 
-      <AboutMe />
+      {/* <AboutMe /> */}
     </MainContainer>
   );
 }

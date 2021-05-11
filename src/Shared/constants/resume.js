@@ -1,4 +1,4 @@
-import downloadableResume from 'Shared/constants/assets/Kchang_SW_CV_10Sep2020.pdf';
+import downloadableResume from 'Shared/constants/assets/Kchang_SW_CV_16Sep2020.pdf';
 import { Logos, LogoObj } from './images';
 
 export const resume = downloadableResume;
